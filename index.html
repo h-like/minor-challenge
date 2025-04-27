@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>마이너 챌린지 제너레이터</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" >
+    <section class="intro-section">
+       
+        <button id="show-all-list-btn" class="show-all-list-btn" style="display:none;">전체 챌린지 보기</button>
+        <p class="intro-text">매일 새로운 작은 도전 과제를 추천받아보세요!</p>
+        <button class="recommend-btn">챌린지 추천받기</button>
+        <div id="challenge-display" class="challenge-display"></div>
+    <div class="my-challenge-section">
+      <form id="custom-challenge-form" class="custom-challenge-form" autocomplete="off">
+        <input type="text" id="custom-challenge-input" class="custom-challenge-input" placeholder="나만의 챌린지 입력" maxlength="50" required>
+        <button type="submit" class="add-challenge-btn">추가</button>
+      </form>
+      <!-- <button id="toggle-custom-list-btn" class="toggle-custom-list-btn">내가 추가한 챌린지만 보기</button> -->
+      <div id="custom-list-wrapper" class="custom-list-wrapper" style="display:none;">
+        <div class="custom-list-header">
+          <span>내가 추가한 챌린지 목록</span>
+          <button id="close-custom-list-btn" class="close-custom-list-btn" title="접기">▲</button>
+        </div>
+        <ul id="custom-list" class="custom-list"></ul>
+      </div>
+    </div>
+    <section id="completed-section" class="completed-section">
+      <h2>
+        완료된 챌린지
+        <span id="today-count-badge" class="today-count-badge"></span>
+        <button id="delete-selected-btn" class="delete-selected-btn" title="선택 삭제">🗑️</button>
+        <!-- <button id="delete-all-btn" class="delete-all-btn" title="전체 삭제">❌</button> -->
+      </h2>
+      <ul id="completed-list" class="completed-list"></ul>
+    </section>
+</section>
+    </div>
+  <script src="main.js"></script>
+</body>
+</html> 

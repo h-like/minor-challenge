@@ -1,0 +1,266 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #faf6f4;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+
+.main-banner {
+  background: #f7b6b0;
+  padding: 2.5rem 0 2rem 0;
+  position: relative;
+  text-align: center;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tomato-emoji {
+  font-size: 3rem;
+  margin-bottom: 0.2rem;
+}
+
+.banner-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #a13c2f;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+.banner-bubble {
+  display: inline-block;
+  background: #fff;
+  color: #d16a5a;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  padding: 0.7rem 2.2rem;
+  margin-top: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.custom-challenge-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.custom-challenge-input {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border: 1.5px solid #ffb3a7;
+  border-radius: 1.2rem;
+  outline: none;
+  background: #fff;
+  transition: border 0.2s;
+  min-width: 0;
+}
+
+.custom-challenge-input:focus {
+  border: 1.5px solid #ff7e6b;
+}
+
+.add-challenge-btn {
+  padding: 0.7rem 1.3rem;
+  font-size: 1rem;
+  background: #ff7e6b;
+  color: #fff;
+  border: none;
+  border-radius: 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.add-challenge-btn:hover {
+  background: #d16a5a;
+}
+
+.intro-text {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.recommend-btn {
+  padding: 0.9rem 2.5rem;
+  font-size: 1.1rem;
+  background: #ff7e6b;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+  margin-bottom: 1rem;
+}
+
+.recommend-btn:hover {
+  background: #d16a5a;
+}
+
+.challenge-display {
+  min-height: 2.5rem;
+  font-size: 1.2rem;
+  color: #a13c2f;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.complete-btn {
+  padding: 0.4rem 1.2rem;
+  font-size: 1rem;
+  background: #6fcf97;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.complete-btn:disabled {
+  background: #bdbdbd;
+  cursor: default;
+}
+
+.completed-section {
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.completed-section h2 {
+  font-size: 1.1rem;
+  color: #d16a5a;
+  margin-bottom: 0.7rem;
+}
+
+.completed-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.completed-list li {
+  background: #ffe3e0;
+  color: #a13c2f;
+  padding: 0.7rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.today-count-badge {
+  display: inline-block;
+  background: #ff7e6b;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  padding: 0.2rem 0.8rem;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.show-custom-list-btn, .show-all-list-btn {
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  background: #ffe3e0;
+  color: #d16a5a;
+  border: none;
+  border-radius: 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+
+.show-custom-list-btn:hover, .show-all-list-btn:hover {
+  background: #ffb3a7;
+}
+
+.custom-list-section {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.custom-list-section h2 {
+  font-size: 1.1rem;
+  color: #d16a5a;
+  margin-bottom: 0.7rem;
+}
+
+.custom-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-list li {
+  background: #fff6f3;
+  color: #a13c2f;
+  padding: 0.7rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+
+.delete-selected-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  color: #d16a5a;
+  transition: color 0.2s;
+}
+
+.delete-selected-btn:hover {
+  color: #a13c2f;
+}
+
+.completed-checkbox {
+  accent-color: #ff7e6b;
+  width: 1.1rem;
+  height: 1.1rem;
+} 
